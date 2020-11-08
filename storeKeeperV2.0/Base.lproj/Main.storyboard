@@ -32,7 +32,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Мой Склад" id="TdD-no-AmC">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="tqs-YZ-Wjb">
+                        <barButtonItem key="backBarButtonItem" title="Склад" id="D0S-ae-Weo"/>
+                        <barButtonItem key="rightBarButtonItem" title="Управлять" image="tray" catalog="system" id="tqs-YZ-Wjb">
                             <connections>
                                 <segue destination="elJ-jh-bzS" kind="show" id="ZGM-by-ZkQ"/>
                             </connections>
@@ -146,7 +147,10 @@
                             <outlet property="delegate" destination="elJ-jh-bzS" id="1rr-ce-qEG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Управление Складом" id="xCE-67-uXe"/>
+                    <navigationItem key="navigationItem" title="Управление Складом" largeTitleDisplayMode="never" id="xCE-67-uXe">
+                        <barButtonItem key="backBarButtonItem" title="Склад" id="cwl-Bc-CQ4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FDz-Ae-zI1"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3De-jl-Qg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,6 +175,7 @@
     </scenes>
     <resources>
         <image name="trash" catalog="system" width="121" height="128"/>
+        <image name="tray" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
