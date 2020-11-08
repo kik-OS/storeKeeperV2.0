@@ -23,14 +23,13 @@ class ScladStatusTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    //override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//        return 0
+  //  }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        listOfItems.count
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -38,15 +37,25 @@ class ScladStatusTableViewController: UITableViewController {
         scladManageVC.listOfItems = listOfItems
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellStatus", for: indexPath)
 
-        // Configure the cell...
+        let item = listOfItems[indexPath.row]
+        cell.textLabel?.text = item.name
+        
+        if item.status {
+            cell.detailTextLabel?.text = "Доступно"
+            cell.detailTextLabel?.textColor = .green
+        } else {
+            cell.detailTextLabel?.text = "Недоступно"
+            cell.detailTextLabel?.textColor = .red
+        }
+        
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
