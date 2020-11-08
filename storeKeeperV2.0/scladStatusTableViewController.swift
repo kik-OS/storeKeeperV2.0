@@ -47,10 +47,10 @@ class ScladStatusTableViewController: UITableViewController {
         
         if item.status {
             cell.detailTextLabel?.text = "Доступно"
-            cell.detailTextLabel?.textColor = .green
+            cell.detailTextLabel?.textColor = .systemGreen
         } else {
             cell.detailTextLabel?.text = "Недоступно"
-            cell.detailTextLabel?.textColor = .red
+            cell.detailTextLabel?.textColor = .systemRed
         }
         
 
