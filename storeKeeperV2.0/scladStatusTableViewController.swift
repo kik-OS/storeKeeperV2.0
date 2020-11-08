@@ -7,7 +7,7 @@
 
 import UIKit
 
-class scladStatusTableViewController: UITableViewController {
+class ScladStatusTableViewController: UITableViewController {
 
     let listOfItems = WareHouseItem.getWareHouseItem()
     
