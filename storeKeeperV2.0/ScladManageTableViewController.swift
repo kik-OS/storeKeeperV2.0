@@ -9,8 +9,9 @@ import UIKit
 
 class ScladManageTableViewController: UITableViewController {
     
-   var listOfItems: [WareHouseItem]!
-
+    var listOfItems: [WareHouseItem]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

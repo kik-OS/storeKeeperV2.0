@@ -9,6 +9,14 @@ import UIKit
 
 class ManageTableViewCell: UITableViewCell {
     let listOfItems = WareHouseItem.getWareHouseItem()
+   
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var typeLabel: UILabel!
+    @IBOutlet var countLaabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    @IBOutlet var acceptButton: UIButton!
+    @IBOutlet var giveOutButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
