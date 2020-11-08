@@ -9,6 +9,8 @@ import UIKit
 
 class scladStatusTableViewController: UITableViewController {
 
+    let listOfItems = WareHouseItem.getWareHouseItem()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +31,11 @@ class scladStatusTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let scladManageVC = segue.destination as! ScladManageTableViewController
+        scladManageVC.listOfItems = listOfItems
     }
 
     /*

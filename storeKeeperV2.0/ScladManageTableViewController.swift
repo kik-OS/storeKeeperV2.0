@@ -8,6 +8,8 @@
 import UIKit
 
 class ScladManageTableViewController: UITableViewController {
+    
+   var listOfItems: [WareHouseItem]!
 
     override func viewDidLoad() {
         super.viewDidLoad()

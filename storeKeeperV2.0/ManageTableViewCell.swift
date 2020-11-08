@@ -8,7 +8,8 @@
 import UIKit
 
 class ManageTableViewCell: UITableViewCell {
-
+    let listOfItems = WareHouseItem.getWareHouseItem()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
