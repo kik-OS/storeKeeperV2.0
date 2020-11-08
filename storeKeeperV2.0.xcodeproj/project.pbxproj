@@ -13,6 +13,9 @@
 		E482A5F825584CF50052CA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E482A5F625584CF50052CA57 /* Main.storyboard */; };
 		E482A5FA25584CF80052CA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E482A5F925584CF80052CA57 /* Assets.xcassets */; };
 		E482A5FD25584CF80052CA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E482A5FB25584CF80052CA57 /* LaunchScreen.storyboard */; };
+		E482A60725584DD60052CA57 /* scladStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A60625584DD60052CA57 /* scladStatusTableViewController.swift */; };
+		E482A60A25584DF20052CA57 /* ScladManageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */; };
+		E482A60D255851F00052CA57 /* ManageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A60C255851F00052CA57 /* ManageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		E482A5F925584CF80052CA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E482A5FC25584CF80052CA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E482A5FE25584CF80052CA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E482A60625584DD60052CA57 /* scladStatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scladStatusTableViewController.swift; sourceTree = "<group>"; };
+		E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScladManageTableViewController.swift; sourceTree = "<group>"; };
+		E482A60C255851F00052CA57 /* ManageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				E482A5F225584CF50052CA57 /* SceneDelegate.swift */,
 				E482A5F425584CF50052CA57 /* ViewController.swift */,
 				E482A5F625584CF50052CA57 /* Main.storyboard */,
+				E482A60C255851F00052CA57 /* ManageTableViewCell.swift */,
+				E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */,
+				E482A60625584DD60052CA57 /* scladStatusTableViewController.swift */,
 				E482A5F925584CF80052CA57 /* Assets.xcassets */,
 				E482A5FB25584CF80052CA57 /* LaunchScreen.storyboard */,
 				E482A5FE25584CF80052CA57 /* Info.plist */,
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E482A60A25584DF20052CA57 /* ScladManageTableViewController.swift in Sources */,
 				E482A5F525584CF50052CA57 /* ViewController.swift in Sources */,
+				E482A60D255851F00052CA57 /* ManageTableViewCell.swift in Sources */,
+				E482A60725584DD60052CA57 /* scladStatusTableViewController.swift in Sources */,
 				E482A5F125584CF50052CA57 /* AppDelegate.swift in Sources */,
 				E482A5F325584CF50052CA57 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58287L88KM;
 				INFOPLIST_FILE = storeKeeperV2.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58287L88KM;
 				INFOPLIST_FILE = storeKeeperV2.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
