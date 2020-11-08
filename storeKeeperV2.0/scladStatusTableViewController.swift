@@ -8,7 +8,8 @@
 import UIKit
 
 class ScladStatusTableViewController: UITableViewController {
-
+   
+    @IBOutlet var sortButtonOutlet: UIBarButtonItem!
     let listOfItems = WareHouseItem.getWareHouseItem()
     
     override func viewDidLoad() {
@@ -55,6 +56,10 @@ class ScladStatusTableViewController: UITableViewController {
 
         return cell
     }
+    
+    @IBAction func sortButtonPressed(_ sender: UIBarButtonItem) {
+    }
+    
     
 
     /*

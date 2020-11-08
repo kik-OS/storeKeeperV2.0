@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,12 +50,20 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Мой Склад" id="TdD-no-AmC">
                         <barButtonItem key="backBarButtonItem" title="Склад" id="D0S-ae-Weo"/>
+                        <barButtonItem key="leftBarButtonItem" title="Сортировка " image="lineweight" catalog="system" id="05J-m6-0xB">
+                            <connections>
+                                <action selector="sortButtonPressed:" destination="atZ-j8-dfV" id="0S0-pk-I6x"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Управлять" image="tray" catalog="system" id="tqs-YZ-Wjb">
                             <connections>
                                 <segue destination="elJ-jh-bzS" kind="show" id="ZGM-by-ZkQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sortButtonOutlet" destination="05J-m6-0xB" id="zYd-dZ-nhG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rJ-3q-6rk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,6 +112,9 @@
                                                             <rect key="frame" x="378.5" y="0.0" width="19.5" height="22"/>
                                                             <color key="tintColor" systemColor="systemRedColor"/>
                                                             <state key="normal" image="trash" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="deleteButtonPressed:" destination="3v4-1h-00Y" eventType="touchUpInside" id="Z7o-Zh-qWG"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -124,10 +136,16 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQX-5k-Eju">
                                                             <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
                                                             <state key="normal" title="Принять"/>
+                                                            <connections>
+                                                                <action selector="acceptButtonPressed:" destination="3v4-1h-00Y" eventType="touchUpInside" id="dGD-7w-pan"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hn-xl-oXA">
                                                             <rect key="frame" x="70" y="0.0" width="68" height="30"/>
                                                             <state key="normal" title="Отписать"/>
+                                                            <connections>
+                                                                <action selector="giveOutButtonPressed:" destination="3v4-1h-00Y" eventType="touchUpInside" id="m9m-NR-RMj"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -151,6 +169,7 @@
                                 <connections>
                                     <outlet property="acceptButton" destination="LQX-5k-Eju" id="Eiu-6N-mcD"/>
                                     <outlet property="countLaabel" destination="ia3-N1-tQr" id="ctY-f9-ba9"/>
+                                    <outlet property="deleteButton" destination="jrs-b4-c7h" id="ngF-MJ-r5j"/>
                                     <outlet property="descriptionLabel" destination="I5N-zY-I83" id="zXR-3y-O9P"/>
                                     <outlet property="giveOutButton" destination="5Hn-xl-oXA" id="zXJ-6H-YBW"/>
                                     <outlet property="titleLabel" destination="bnP-aQ-6lX" id="HP5-I9-kMi"/>
@@ -165,12 +184,31 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Управление Складом" largeTitleDisplayMode="never" id="xCE-67-uXe">
                         <barButtonItem key="backBarButtonItem" title="Склад" id="cwl-Bc-CQ4"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FDz-Ae-zI1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FDz-Ae-zI1">
+                            <connections>
+                                <segue destination="r0O-2H-NJI" kind="presentation" modalPresentationStyle="fullScreen" id="C3b-cU-ygr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3De-jl-Qg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1613.0434782608697" y="111.83035714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D23-4j-6T6">
+            <objects>
+                <viewController id="r0O-2H-NJI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R8j-mX-g00">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oCD-mG-4ro"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrJ-4B-hxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="112"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nPQ-EI-iqz">
@@ -190,6 +228,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="lineweight" catalog="system" width="128" height="110"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <image name="tray" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">

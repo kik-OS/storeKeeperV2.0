@@ -17,6 +17,8 @@ class ManageTableViewCell: UITableViewCell {
     
     @IBOutlet var acceptButton: UIButton!
     @IBOutlet var giveOutButton: UIButton!
+    @IBOutlet var deleteButton: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,4 +31,13 @@ class ManageTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func acceptButtonPressed(_ sender: Any) {
+    }
+    @IBAction func giveOutButtonPressed(_ sender: Any) {
+    }
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+    }
+    
+    
+    
 }
