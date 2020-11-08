@@ -50,7 +50,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Мой Склад" id="TdD-no-AmC">
                         <barButtonItem key="backBarButtonItem" title="Склад" id="D0S-ae-Weo"/>
-                        <barButtonItem key="leftBarButtonItem" title="Сортировка " image="lineweight" catalog="system" id="05J-m6-0xB">
+                        <barButtonItem key="leftBarButtonItem" title="Сортировка " image="slider.vertical.3" catalog="system" id="05J-m6-0xB">
                             <connections>
                                 <action selector="sortButtonPressed:" destination="atZ-j8-dfV" id="0S0-pk-I6x"/>
                             </connections>
@@ -228,7 +228,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lineweight" catalog="system" width="128" height="110"/>
+        <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <image name="tray" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
