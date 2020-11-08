@@ -17,7 +17,7 @@ class ManageTableViewCell: UITableViewCell {
     
     @IBOutlet var acceptButton: UIButton!
     @IBOutlet var giveOutButton: UIButton!
-    @IBOutlet var deleteButton: UIButton!
+    
     
     
     override func awakeFromNib() {

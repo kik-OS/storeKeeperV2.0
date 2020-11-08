@@ -17,6 +17,7 @@
 		E482A60725584DD60052CA57 /* ScladStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A60625584DD60052CA57 /* ScladStatusTableViewController.swift */; };
 		E482A60A25584DF20052CA57 /* ScladManageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */; };
 		E482A60D255851F00052CA57 /* ManageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A60C255851F00052CA57 /* ManageTableViewCell.swift */; };
+		E4EB015E255899AB004AFABF /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB015D255899AB004AFABF /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E482A60625584DD60052CA57 /* ScladStatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScladStatusTableViewController.swift; sourceTree = "<group>"; };
 		E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScladManageTableViewController.swift; sourceTree = "<group>"; };
 		E482A60C255851F00052CA57 /* ManageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTableViewCell.swift; sourceTree = "<group>"; };
+		E4EB015D255899AB004AFABF /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				E482A5F225584CF50052CA57 /* SceneDelegate.swift */,
 				E482A5F425584CF50052CA57 /* ViewController.swift */,
 				E482A5F625584CF50052CA57 /* Main.storyboard */,
+				E4EB015D255899AB004AFABF /* NavigationViewController.swift */,
 				E482A60C255851F00052CA57 /* ManageTableViewCell.swift */,
 				E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */,
 				E482A60625584DD60052CA57 /* ScladStatusTableViewController.swift */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4EB015E255899AB004AFABF /* NavigationViewController.swift in Sources */,
 				E482A60A25584DF20052CA57 /* ScladManageTableViewController.swift in Sources */,
 				E482A5F525584CF50052CA57 /* ViewController.swift in Sources */,
 				E482A60D255851F00052CA57 /* ManageTableViewCell.swift in Sources */,
