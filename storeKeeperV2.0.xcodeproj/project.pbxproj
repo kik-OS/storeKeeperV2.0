@@ -10,7 +10,6 @@
 		B98A96CB2558541100424FD2 /* WareHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A96CA2558541100424FD2 /* WareHouse.swift */; };
 		E482A5F125584CF50052CA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A5F025584CF50052CA57 /* AppDelegate.swift */; };
 		E482A5F325584CF50052CA57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A5F225584CF50052CA57 /* SceneDelegate.swift */; };
-		E482A5F525584CF50052CA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A5F425584CF50052CA57 /* ViewController.swift */; };
 		E482A5F825584CF50052CA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E482A5F625584CF50052CA57 /* Main.storyboard */; };
 		E482A5FA25584CF80052CA57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E482A5F925584CF80052CA57 /* Assets.xcassets */; };
 		E482A5FD25584CF80052CA57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E482A5FB25584CF80052CA57 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		E482A60A25584DF20052CA57 /* ScladManageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */; };
 		E482A60D255851F00052CA57 /* ManageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482A60C255851F00052CA57 /* ManageTableViewCell.swift */; };
 		E4EB015E255899AB004AFABF /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB015D255899AB004AFABF /* NavigationViewController.swift */; };
+		E4EB016125592B5A004AFABF /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EB016025592B5A004AFABF /* AddNewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,6 @@
 		E482A5ED25584CF50052CA57 /* storeKeeperV2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storeKeeperV2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E482A5F025584CF50052CA57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E482A5F225584CF50052CA57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E482A5F425584CF50052CA57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E482A5F725584CF50052CA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E482A5F925584CF80052CA57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E482A5FC25584CF80052CA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScladManageTableViewController.swift; sourceTree = "<group>"; };
 		E482A60C255851F00052CA57 /* ManageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTableViewCell.swift; sourceTree = "<group>"; };
 		E4EB015D255899AB004AFABF /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		E4EB016025592B5A004AFABF /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 			children = (
 				E482A5F025584CF50052CA57 /* AppDelegate.swift */,
 				E482A5F225584CF50052CA57 /* SceneDelegate.swift */,
-				E482A5F425584CF50052CA57 /* ViewController.swift */,
 				E482A5F625584CF50052CA57 /* Main.storyboard */,
+				E4EB016025592B5A004AFABF /* AddNewViewController.swift */,
 				E4EB015D255899AB004AFABF /* NavigationViewController.swift */,
 				E482A60C255851F00052CA57 /* ManageTableViewCell.swift */,
 				E482A60925584DF20052CA57 /* ScladManageTableViewController.swift */,
@@ -153,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EB015E255899AB004AFABF /* NavigationViewController.swift in Sources */,
+				E4EB016125592B5A004AFABF /* AddNewViewController.swift in Sources */,
 				E482A60A25584DF20052CA57 /* ScladManageTableViewController.swift in Sources */,
-				E482A5F525584CF50052CA57 /* ViewController.swift in Sources */,
 				E482A60D255851F00052CA57 /* ManageTableViewCell.swift in Sources */,
 				B98A96CB2558541100424FD2 /* WareHouse.swift in Sources */,
 				E482A60725584DD60052CA57 /* ScladStatusTableViewController.swift in Sources */,

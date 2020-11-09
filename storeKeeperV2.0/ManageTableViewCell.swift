@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class ManageTableViewCell: UITableViewCell {
     let listOfItems = WareHouseItem.getWareHouseItem()
    
@@ -18,17 +20,12 @@ class ManageTableViewCell: UITableViewCell {
     @IBOutlet var acceptButton: UIButton!
     @IBOutlet var giveOutButton: UIButton!
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
     @IBAction func acceptButtonPressed(_ sender: Any) {
@@ -37,7 +34,10 @@ class ManageTableViewCell: UITableViewCell {
     }
     @IBAction func deleteButtonPressed(_ sender: Any) {
     }
-    
-    
-    
 }
+
+
+
+    
+    
+

@@ -8,18 +8,10 @@
 import UIKit
 
 class ScladStatusTableViewController: UITableViewController {
-   
+    
     @IBOutlet var sortButtonOutlet: UIBarButtonItem!
     var listOfItems = WareHouseItem.getWareHouseItem()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-
-  
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         listOfItems.count
     }
@@ -28,11 +20,11 @@ class ScladStatusTableViewController: UITableViewController {
         guard let scladManageVC = segue.destination as? ScladManageTableViewController else { return }
         scladManageVC.listOfItems = listOfItems
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellStatus", for: indexPath)
-
+        
         let item = listOfItems[indexPath.row]
         cell.textLabel?.text = item.name
         
@@ -43,23 +35,16 @@ class ScladStatusTableViewController: UITableViewController {
             cell.detailTextLabel?.text = "Недоступно"
             cell.detailTextLabel?.textColor = .systemRed
         }
-        
-
         return cell
     }
     
     @IBAction func sortButtonPressed(_ sender: UIBarButtonItem) {
     }
     
-    
     //возврат измененного массива
     @IBAction func saveus (segue: UIStoryboardSegue) {
-    let dataFromManagerVC = segue.source as! ScladManageTableViewController
-    listOfItems = dataFromManagerVC.listOfItems
+        let dataFromManagerVC = segue.source as! ScladManageTableViewController
+        listOfItems = dataFromManagerVC.listOfItems
         tableView.reloadData()
-}
-    
-    
-    
-    
+    }
 }
